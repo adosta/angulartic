@@ -1,0 +1,33 @@
+ <div class="form-group container">
+	    <h1>Listado de Productos</h1>
+		    <div class="panel panel-primary class">
+			    <div class="panel-heading">Listado de productos</div>
+				
+					    <div id="main" class="">
+					    <form action="" method="POST" id="frmTabla" accept-charset="utf-8">
+					    	<table  id="tblProductos" class="table table-striped">
+							    <tr  id="cabecera">
+								    <th>Id</th>
+								    <th>Nombre</th>
+								    <th>Precio</th>
+							    </tr>
+							     <tr *ngFor='let p of productos' id="cabecera">
+								    <td>{{p.id}}</td>
+								    <td>{{p.nombre}}</td>
+								    <td>{{p.precio}}</td>
+								    <td>
+								    	
+									    	<i class="glyphicon glyphicon-remove" aria-hidden="true" (click)="eraseProducto(p.id)"></i>
+									    
+									</td>
+									<td>
+									    <a [routerLink]="['/editarProducto', {id:p.id}]">
+									    	<i class="glyphicon glyphicon-edit" aria-hidden="true" ></i>
+									    </a>
+								    </td>
+							    </tr>
+						    </table>
+					    </form>
+					 </div>			
+		    </div>
+	    </div>

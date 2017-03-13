@@ -1,1 +1,21 @@
 /* You can add global styles to this file, and also import other style files */
+
+p{
+	color: red;
+}
+
+h1{
+	color:blue;
+}
+
+.inputInvalido{
+	background-color: pink;
+}
+
+app-mi-panel1{
+	background-color: blue;
+}
+
+app-mipanel2{
+	background-color: green;
+}

@@ -1,0 +1,11 @@
+<h1>Componente 1</h1>
+
+<span>Clic Aqui</span>
+<button (click)='lanzarAlerta()'>aqui</button>
+
+<label for="">Contador de clics</label>
+<span>{{count}}</span>
+<label for="">tu valor:</label>
+<input [(ngModel)]='miValor' id="entrada" type="text" class="inputInvalido" 
+[class.inputInvalido]='esInputValido()' [disabled]='esInputValido()' [disabled]='miValor>=5' >
+<h3>TEXTO ESCRITO</h3>{{miValor}}
